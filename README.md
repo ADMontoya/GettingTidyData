@@ -25,5 +25,4 @@ This project are compound by three files:
 ### Running the script
 
 * Download run_analysis.R from this project to your working directory in "R"
-* Start RStudio and execute this instruction: *source("run_analysis.R")*
-  
+* Start RStudio and execute this instruction: `source("run_analysis.R")`
