@@ -95,3 +95,12 @@ Now I remove those columns that I don't needed. I use the function `select` from
 data<-select(data, 3, 2, 4:69)
 ```
 Third objective, done!
+
+Now I have to improve the column names of dataset, there are to be descriptives. To perform this action I use the function `sub` with some regular expressions. Here is the code:
+
+```
+names(data)<-sub("\\.\\.", "", names(data))
+names(data)<-sub("^t", "time.", names(data))
+names(data)<-sub("^f", "frequency.", names(data))
+```
+Fourth objective, done!
