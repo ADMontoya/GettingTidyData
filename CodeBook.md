@@ -104,3 +104,10 @@ names(data)<-sub("^t", "time.", names(data))
 names(data)<-sub("^f", "frequency.", names(data))
 ```
 Fourth objective, done!
+
+Finally I have to create a tidy data set with the average of each variable for each activity and each subject. To perform this actions I use a chain of functions like `group_by` and `summarise_each` with the operator `%>%`. Here is the code:
+
+```
+tidyData<-data %>% group_by(subject, activity) %>% summarise_each(funs(mean))
+```
+Fifth objective, done!
